@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
-        <div className="flex m-20">
+        <div className="flex">
           Coucou
         </div>
         <div className={styles.grid}>

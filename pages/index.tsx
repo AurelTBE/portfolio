@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import { State } from '../context/State';
 import Hero from '../components/Hero';
+import Projects from '../components/Projects';
 
 const Home: NextPage = () => {
   const { handleActivePage }: any = useContext(State)
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Hero />
+      <Projects />
     </div>
   )
 }

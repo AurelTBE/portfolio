@@ -43,18 +43,18 @@ const Header = () => {
                     </div>
                     <div className='flex'>
                         <Link href="https://github.com/AurelTBE">
-                            <a target="_blank" className="cursor-pointer px-2">
-                                <AiFillGithub size="3rem" />
+                            <a target="_blank" className="cursor-pointer px-2 text-3xl">
+                                <AiFillGithub />
                             </a>
                         </Link>
                         <Link href="https://www.linkedin.com/in/aurelientrouble/">
-                            <a target="_blank" className="cursor-pointer px-2">
-                                <AiFillLinkedin size="3rem" />
+                            <a target="_blank" className="cursor-pointer px-2 text-3xl">
+                                <AiFillLinkedin />
                             </a>
                         </Link>
                         <Link href="https://www.instagram.com/">
-                            <a target="_blank" className="cursor-pointer px-2">
-                                <AiFillInstagram size="3rem" />
+                            <a target="_blank" className="cursor-pointer px-2 text-3xl">
+                                <AiFillInstagram />
                             </a>
                         </Link>
                     </div>

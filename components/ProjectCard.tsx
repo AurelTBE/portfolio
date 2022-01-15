@@ -25,8 +25,20 @@ const ProjectCard = ({project}: {project:IProject}) => {
             <h3 className='mb-2 font-semibold text-xl'>
                 {title}
             </h3>
+            <hr />
             <div>
                 {description}
+            </div>
+            <div>
+                <div className="flex justify-center mt-2">Techs :</div>
+                <div className='flex justify-between'>
+                    {tags.map((tag, i) => (
+                        <span key={i}>
+                            {tag}
+                        </span>
+                    ))}
+                </div>
+
             </div>
         </div>
     )

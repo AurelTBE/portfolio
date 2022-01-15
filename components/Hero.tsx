@@ -1,13 +1,6 @@
 import React from 'react'
-import { useRouter } from 'next/router'
 
-interface Props {
-    
-}
-
-const Hero = (props: Props) => {
-    const router = useRouter()
-
+const Hero = () => {
     return (
         <section className='flex flex-row items-center justify-center my-10'>
             <div className="">

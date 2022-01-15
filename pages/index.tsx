@@ -6,7 +6,7 @@ import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 
 const Home: NextPage = () => {
-  const { handleActivePage }: any = useContext(State)
+  const { handleActivePage }: {handleActivePage:(page:string) => void} = useContext(State)
   
   useEffect(() => {
     handleActivePage("Accueil")

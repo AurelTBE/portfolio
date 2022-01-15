@@ -1,20 +1,27 @@
 import React from 'react'
-import Image from 'next/image'
 
-interface Props {
-    project: any
+export interface IProject {
+    title:       string;
+    description: string;
+    image:       string;
+    tags:        string[];
+    source:      string;
+    visit:       string;
+    id:          number;
 }
 
-const ProjectCard = ({project}: Props) => {
+
+const ProjectCard = ({project}: {project:IProject}) => {
+
     return (
         <div className="">
-            <Image
-                unoptimized
-                alt={project.title}
-                src={project.image}
-                width={400}
-                height={300}
-            />
+            <div className='relative mb-6 overflow-hidden shadow-md pb-80'>
+                <img
+                    alt={project.title}
+                    src={project.image}
+                    className='absolute object-cover object-top w-full rounded-t-lg shadow-lg h-80 lg:rounded-lg'
+                />
+            </div>
             <h3 className='mb-2 font-semibold text-xl'>
                 {project.title}
             </h3>

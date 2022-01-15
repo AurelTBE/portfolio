@@ -12,7 +12,6 @@ export interface IProject {
 
 
 const ProjectCard = ({project}: {project:IProject}) => {
-
     return (
         <div className="">
             <div className='relative mb-6 overflow-hidden shadow-md pb-80'>

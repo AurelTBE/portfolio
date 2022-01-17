@@ -12,6 +12,9 @@ const Timeline = (props: Props) => {
                 <h3 className="text-3xl">
                     A propos de moi
                 </h3>
+                <div>
+                    Timeline content
+                </div>
             </div>
         </section>
     )

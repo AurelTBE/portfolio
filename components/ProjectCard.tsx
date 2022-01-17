@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export interface IProject {
     title:       string;
@@ -38,7 +39,18 @@ const ProjectCard = ({project}: {project:IProject}) => {
                         </span>
                     ))}
                 </div>
-
+            </div>
+            <div className='flex my-6 justify-around'>
+                <Link href={visit}>
+                    <a target='_blank' className="bg-teal-500 hover:bg-teal-700 py-4 px-8 rounded-full shadow-xl font-semibold">
+                        Code
+                    </a>
+                </Link>
+                <Link href={source}>
+                    <a target='_blank' className="bg-teal-500 hover:bg-teal-700 py-4 px-8 rounded-full shadow-xl font-semibold">
+                        Source
+                    </a>
+                </Link>
             </div>
         </div>
     )

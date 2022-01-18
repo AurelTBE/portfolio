@@ -24,7 +24,7 @@ const Timeline = (props: Props) => {
                 <h3 className="text-3xl text-white">
                     A propos de moi
                 </h3>
-                <div className='relative container mx-auto px-6'>
+                <div className='relative container mx-auto px-6 my-6'>
                     <div className="absolute z-0 w-2 h-full bg-white shadow-md left-17 inset-0">
                     </div>
                     {TimeLineData.map(element => (

@@ -7,6 +7,17 @@ interface Props {
 }
 
 const Timeline = (props: Props) => {
+    const iconSelect = (icon: string) => {
+        switch (icon) {
+            case "work":
+                return <MdWork />
+            case "school":
+                return <MdSchool />
+            default:
+                return <MdWork />
+        }        
+    } 
+
     return (
         <section id="apropos" className="mx-10 lg:mx-20 antialiased">
             <div className="">
@@ -20,7 +31,7 @@ const Timeline = (props: Props) => {
                         <div className='relative z-10 py-5'>
                             <div className='relative pt-12'>
                                 <div className='absolute flex left-6 inset-0 items-center justify-center text-3xl text-white bg-pink-800 w-12 h-12 rounded-full border-2 border-white shadow-xl'>
-                                    <MdWork />
+                                    {iconSelect(element.icon)}
                                 </div>
                             </div>
                             <div className='relative pt-2'>

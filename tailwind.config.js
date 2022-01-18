@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx','./public/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      inset: {
+        "17": "68px"
+      }
+    },
   },
   plugins: [],
 }

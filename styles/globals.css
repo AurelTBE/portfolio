@@ -19,6 +19,13 @@ a {
   box-sizing: border-box;
 }
 
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .btngrad {
   background-image:#ff99c7;background-image:  
   radial-gradient(at 98% 63%, hsla(212,67%,63%,1) 0, transparent 55%),  

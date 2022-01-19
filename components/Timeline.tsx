@@ -29,7 +29,7 @@ const Timeline = (props: Props) => {
                         className="absolute z-0 w-2 h-full bg-white shadow-md left-17 inset-0 md:mx-auto md:left-0 md:right-0"
                     ></div>
                     {TimeLineData.map(element => (
-                        <div className='relative z-10'>
+                        <div className='relative z-10' key={element.id}>
                             <div className='relative pt-12 xs:absolute'>
                                 <div className='absolute flex left-6 inset-0 items-center justify-center text-3xl text-white bg-pink-800 w-12 h-12 rounded-full border-2 border-white shadow-xl'>
                                     {iconSelect(element.icon)}

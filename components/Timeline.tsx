@@ -48,8 +48,9 @@ const Timeline = (props: Props) => {
                                     className={`absolute inset-0 left-10 h-4 w-4 transform rotate-45 bg-white xs:top-4 xs:left-19 ${isEven(element.id) ? "md:left-auto md:right-7" : "md:left-7"}`}
                                 ></div>
                                 <div className='bg-white p-6 rounded-md shadow-md'>
-                                    <h4 className='text-lg font-semibold'>{element.title}</h4>
-                                    <div>{element.description}</div>
+                                    <span className="text-sm font-semibold text-teal-700 tracking-wide">{element.date}</span>
+                                    <h4 className='text-lg font-semibold pt-1'>{element.title}</h4>
+                                    <p className='pt-1'>{element.description}</p>
                                 </div>
                             </div>
                         </div>

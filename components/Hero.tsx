@@ -4,11 +4,11 @@ const Hero = () => {
     return (
         <section className='flex flex-row items-center justify-center my-10'>
             <div className="">
-                <h1 className='text-4xl text-white'>
+                <h1 className='text-4xl'>
                     Bienvenu sur<br />
                     Mon portfolio
                 </h1>
-                <div className='text-white'>
+                <div className=''>
                     Mon objectif est de vous rendre inoubliable !
                 </div>
                 <div className="my-8">

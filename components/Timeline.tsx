@@ -28,7 +28,7 @@ const Timeline = (props: Props) => {
     return (
         <section id="apropos" className="mx-10 lg:mx-20 antialiased">
             <div className="">
-                <h3 className="text-3xl text-white">
+                <h3 className="text-3xl">
                     A propos de moi
                 </h3>
                 <div className='relative container mx-auto px-6 my-6 flex flex-col space-y-8'>
